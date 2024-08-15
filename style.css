@@ -1,0 +1,172 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+    font-size: 18px;
+    background: #f2f2f2;
+}
+.container
+{
+    background: rgba(128, 128, 128, 0.021) ;
+    width: 500px;
+    padding: 25px;
+    margin: 50px auto 0;
+    border-top: 5px solid blue ;
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+}
+.container h2
+{
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.input_name
+{
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+
+}
+.lock
+{
+    padding: 6px 9px;
+}
+.name
+{
+    width: 45%;
+    padding: 6px 0 6px 40px ;
+}
+.input_name span
+{
+    margin-left: 35px;
+}
+.text-name
+{
+    width: 100%;
+    padding: 6px 0 6px 40px ; 
+}
+.input_name i
+{
+    position: absolute;
+    font-size: 18px;
+    color: blue;
+    border-right: 1px solid #cccccc;
+}
+.email 
+{
+    padding: 6.5px;
+}
+.text-name , .name
+{
+    border: 1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-webkit-transition: all 0.30s ease-in-out;
+
+    -ms-webkit-transition: all 0.30s ease-in-out;
+
+    transition: all 0.30s ease-in-out;
+
+}
+.text-name:hover , .text-name:hover{
+    background-color: #f2f2f2;
+}
+.text-name:focus , .text-name:focus
+{
+    border: 1px solid black;
+}
+.radio-button
+{
+    margin: 4px ;
+    color:blue;
+}
+.country
+{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px ;
+    cursor: pointer;
+    border: 1px solid #cccccc ;
+    color: #7b7b7b;
+    background: white;
+    border-radius: 0;
+    appearance: none;
+    transition: all 0.2s ease;
+
+}
+.country:hover , .country:focus
+{
+    color: blue;
+    background: #fafafa;
+    border-color: black;
+    outline: none;
+}
+.arrow
+{
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    height: 0;
+    width: 0;
+    pointer-events: none ;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+.country:hover + .arrow, .country:focus +.arrow{
+    border-top-color: blue;
+}
+.check
+{
+    margin-right: 15px;
+    position: relative;
+    
+
+}
+
+
+ .buttns
+ {
+    background-color: blue;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+ }
+ .buttns:hover
+ {
+    background: green; 
+ } 
+ @media (max-width: 480px)
+ {
+    .container
+    {
+        width: 100%;
+        padding: 5px;
+    }
+    .input_name
+    {
+        margin-bottom: -10px;
+    }
+    .name
+    {
+        width: 100%;
+        padding: 8px 0 8px 40px ;
+        margin-bottom: 10px;
+    }
+    .input_name ruby-span: {
+        padding: 0;
+        margin: 0;
+    };
+ }
